@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 20th Birthday Annu ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#ffd6e7,#ffe7f2,#ffcce0,#ffeaf5);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+overflow-x:hidden;
+color:#444;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url("main1.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+color:white;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ff4f93;
+color:white;
+cursor:pointer;
+font-size:1rem;
+font-weight:bold;
+}
+
+.section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.7rem;
+margin-bottom:50px;
+color:#ff4f93;
+}
+
+.card{
+max-width:900px;
+margin:20px auto;
+background:rgba(255,255,255,.35);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+cursor:pointer;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.hidden{
+display:none;
+margin-top:20px;
+}
+
+.hidden img{
+width:100%;
+border-radius:20px;
+}
+
+.reason{
+margin-top:15px;
+}
+
+.final{
+display:none;
+font-size:2rem;
+text-align:center;
+margin-top:30px;
+color:#ff4f93;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:float linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes float{
+to{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+footer{
+padding:50px;
+text-align:center;
+font-size:1.1rem;
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1 id="typing"></h1>
+
+<p>
+A little website made with lots of love ❤️
+</p>
+
+<a href="#memories">
+<button class="btn">
+Start Exploring ✨
+</button>
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="memories">
+
+<h2 class="title">Tap To Unlock Memories ❤️</h2>
+
+<div class="card" onclick="toggle('m1')">
+
+📸 Our Special Memory
+
+<div id="m1" class="hidden">
+
+<br>
+
+<img src="photo1.jpeg">
+
+<p class="reason">
+One of the moments I'll never forget ❤️
+</p>
+
+</div>
+
+</div>
+
+<div class="card" onclick="toggle('m2')">
+
+🌸 A Beautiful Day
+
+<div id="m2" class="hidden">
+
+<br>
+
+<img src="photo2.jpeg">
+
+<p class="reason">
+A memory that always makes me smile ❤️
+</p>
+
+</div>
+
+</div>
+
+<div class="card" onclick="toggle('m3')">
+
+✨ My Favorite Person
+
+<div id="m3" class="hidden">
+
+<br>
+
+<img src="photo3.jpeg">
+
+<p class="reason">
+My favorite photo of us ❤️
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">💌 Open My Letter</h2>
+
+<div class="card" onclick="toggle('letter')">
+
+Tap Here To Open ❤️
+
+<div id="letter" class="hidden">
+
+<br>
+
+Dear Annu ❤️
+
+<br><br>
+
+Happy 20th Birthday my love
+
+<br><br>
+
+Thank you for all the happiness and memories you've brought into my life
+
+You make every day brighter and every moment special
+
+I hope this year gives you endless happiness success and everything your heart desires
+
+<br><br>
+
+I love you ❤️
+
+<br><br>
+
+— Aryan
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">20 Reasons I Love You ❤️</h2>
+
+<div class="card" onclick="toggle('r1')">
+❤️ Tap To Reveal
+<div id="r1" class="hidden">Your smile</div>
+</div>
+
+<div class="card" onclick="toggle('r2')">
+❤️ Tap To Reveal
+<div id="r2" class="hidden">Your kindness</div>
+</div>
+
+<div class="card" onclick="toggle('r3')">
+❤️ Tap To Reveal
+<div id="r3" class="hidden">Your laugh</div>
+</div>
+
+<div class="card" onclick="toggle('r4')">
+❤️ Tap To Reveal
+<div id="r4" class="hidden">The way you care</div>
+</div>
+
+<div class="card" onclick="toggle('r5')">
+❤️ Tap To Reveal
+<div id="r5" class="hidden">Everything about you</div>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">🎁 Secret Surprise</h2>
+
+<div class="card" onclick="toggle('secret')">
+
+Tap Me ❤️
+
+<div id="secret" class="hidden">
+
+<br>
+
+You are my favorite notification
+
+<br><br>
+
+You are my favorite memory
+
+<br><br>
+
+And you'll always be my favorite person ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div style="text-align:center">
+
+<button class="btn" onclick="showFinal()">
+Final Birthday Wish 🎂
+</button>
+
+<div class="final" id="final">
+
+Happy 20th Birthday Annu ❤️
+
+<br><br>
+
+Thank you for being you
+
+<br><br>
+
+I love you more than words can explain ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+Made with ❤️ by Aryan
+</footer>
+
+<script>
+
+function toggle(id){
+let x=document.getElementById(id);
+
+if(x.style.display==="block"){
+x.style.display="none";
+}else{
+x.style.display="block";
+}
+}
+
+function showFinal(){
+document.getElementById("final").style.display="block";
+}
+
+let text="Happy 20th Birthday Annu ❤️";
+let i=0;
+
+function typeWriter(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typeWriter,80);
+}
+}
+
+typeWriter();
+
+function createHeart(){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(Math.random()*5+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},9000);
+
+}
+
+setInterval(createHeart,300);
+
+</script>
+
+</body>
+</html>
